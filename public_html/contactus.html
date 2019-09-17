@@ -4,27 +4,41 @@
         <title>Contact Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
+        <div id="nav_outer">
             <a href="index.html">Home</a>
             <a href="register.html">Register</a>
             <a href="login.html">Login</a>
             <a href="contactus.html">Contact Us</a>
         </div>
-        <div>
-            <form action="action.php">
-                <label>Name</label>
-                <input type="text" name="uname" placeholder="Name" required><br>
+        
+        <div id="blank_50px"></div>
+        
+        <div id="form_outer">
+            <div id="form_inner">
+                <form action="action.php">
 
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Email" required><br>
-                
-                <label>Message</label>
-                <textarea name="msg" rows="4" cols="50" placeholder="Enter your message here" required></textarea><br>
+                    <p id="form_title">Contact Us</p>
 
-                <input type="Submit" value="Submit">
-            </form>
+                    <div id="form_content">
+                        <label class="form_label">Name</label>
+                        <input class="form_input" type="email" name="uname" placeholder="Name" required><br>
+
+                        <label class="form_label">Email</label>
+                        <input class="form_input" type="email" name="email" placeholder="Email" required><br>
+                        
+                        <p class="form_textarea_outer">
+                            <label class="form_label">Message</label>
+                            <textarea class="form_input" name="msg" rows="4" placeholder="Enter your message here" required></textarea><br>
+                        </p>
+                        
+                        <input class="form_input" type="Submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
+        
     </body>
 </html>

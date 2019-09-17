@@ -4,24 +4,36 @@
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
+        <div id="nav_outer">
             <a href="index.html">Home</a>
             <a href="register.html">Register</a>
             <a href="login.html">Login</a>
             <a href="contactus.html">Contact Us</a>
         </div>
-        <div>
-            <form action="action.php">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Email" required><br>
 
-                <label>Password</label>
-                <input type="password" name="psw" placeholder="Password" required><br>
+        <div id="blank_50px"></div>
 
-                <input type="Submit" value="Login">
-            </form>
+        <div id="form_outer">
+            <div id="form_inner">
+                <form action="action.php">
+
+                    <p id="form_title">Login</p>
+
+                    <div id="form_content">
+                        <label class="form_label">Email</label>
+                        <input class="form_input" type="email" name="email" placeholder="Email" required><br>
+
+                        <label class="form_label">Password</label>
+                        <input class="form_input" type="password" name="psw" placeholder="Password" required><br>
+
+                        <input class="form_input" type="Submit" value="Login">
+                    </div>
+                </form>
+            </div>
         </div>
+
     </body>
 </html>
